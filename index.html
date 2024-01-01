@@ -1116,15 +1116,25 @@
 document.getElementById('myForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    var formData = new FormData(this);
+    var form = this; // Reference to the form
+    var formData = new FormData(form);
 
     fetch('/', {
         method: 'POST',
-        body: formData // No need to set headers as formData sets the correct headers for multipart/form-data
+        body: formData // FormData will be sent correctly
     })
-    .then(() => document.getElementById('response').innerHTML = 'Thank you for your submission!')
-    .catch((error) => document.getElementById('response').innerHTML = 'Error: ' + error);
+    .then(() => {
+        // Hide the form
+        form.style.display = 'none';
+        // Show the thank you message
+        document.getElementById('response').innerHTML = 'Merci pour votre intérêt, nous allons vous recontacter dans les prochains 24h sans faute.';
+    })
+    .catch((error) => {
+        // In case of an error, you can choose to show the form again or display an error message
+        document.getElementById('response').innerHTML = 'Error: ' + error;
+    });
 });
+
     </script>
 </body>
 
