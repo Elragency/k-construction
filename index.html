@@ -1121,16 +1121,14 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
     var formData = new FormData(form);
     var responseDiv = document.getElementById('response'); // Reference to the response div
 
-    // Immediately hide the form on submission
-    form.style.display = 'none';
-
     fetch('/', {
         method: 'POST',
         body: formData
     })
     .then(() => {
-        // Display the thank you message
+        // Display the thank you message and hide the form
         responseDiv.innerHTML = 'Thank you for your submission!';
+        form.style.display = 'none';
     })
     .catch((error) => {
         // Display error message
@@ -1138,9 +1136,14 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
         // Optionally, you can show the form again if there's an error
         // form.style.display = 'block';
     });
+
+    // Immediately hide the form on submission
+    form.style.display = 'none';
+    // Optionally, you can set a "Submitting..." message
+    responseDiv.innerHTML = 'Submitting...';
 });
 
-    </script>
+ </script>
 </body>
 
 </html>
