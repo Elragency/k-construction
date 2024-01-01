@@ -938,7 +938,7 @@
                                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                                     <!-- <br><br><br><br><br><br><br><br><br> -->
                                     <h3 class="light text-uppercase">Parlez-nous de vos projets!</h2>
-                                    <form name="Contact" method="post" class="needs-validation"  novalidate netlify>
+                                    <form name="contact" id="myForm" netlify>
                                         <div class="row">
                                           <div class="col-md-6 mb-3">
                                             <label for="Name" id="nameLabel">Nom Complet</label>
@@ -991,7 +991,7 @@
                                         <!-- <div netlify-recaptcha></div> -->
                             
                                         <hr class="">
-                                        <button class="btn-slide btn-medium btn-light hover-slide-right text-uppercase" type="submit">ENVOYER</button>
+                                        <button class="btn-slide btn-medium btn-light hover-slide-right text-uppercase" type="submit">ENVOYER</button> 
                                       </form>
                                 </div>
                             </div>
@@ -1002,27 +1002,44 @@
 
             <section>
                 <form name="contact" id="myForm" netlify><p>
-                    <label>Name <input type="text" name="name" /></label>
+                    <!-- <label>Name <input type="text" name="name" /></label> -->
                     <input type="text" name="username" placeholder="Username" required>
                 </p>
                 <p>
-                    <label>Email <input type="email" name="email" /></label>
+                    <!-- <label>Email <input type="email" name="email" /></label> -->
                     <input type="email" name="email" placeholder="Email" required>
                 </p>
+                <p>
+                    <div class="mb-3">
+                        <label for="text" id="nameLabel" >Comment Pouvons-nous vous aider</label>
+                        <textarea class="form-control" name="sujet" id="sujet" placeholder="Parlez-nous de vos projets" required></textarea>
+                        <div class="invalid-feedback">Entrez votre message....
+
+                        </div>
+                    </div>
+                    <h4 class="mb-3" id="nameLabel">Joindre un fichier</h4>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
+                            <label class="custom-file-label" for="inputGroupFile02" id="nameLabel">Choisir un Fichier</label>
+                        </div>
+                    </div>
+                </p>
+                
                 <p>
                     <button type="submit response">Send</button>
                     <div id="response"></div>
                 </p>
             </form>
 
-                <form id="myForm" data-netlify="true">
+                <!-- <form id="myForm" data-netlify="true">
                     <input type="text" name="username" placeholder="Username" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <button type="submit">Submit</button>
                 </form>
                 <div id="response"></div>
             </section>
-               
+                -->
     
 
     <section id="footer">
