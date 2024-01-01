@@ -1121,23 +1121,24 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
     var formData = new FormData(form);
     var responseDiv = document.getElementById('response'); // Reference to the response div
 
+    // Immediately hide the form on submission
+    form.style.display = 'none';
+
     fetch('/', {
         method: 'POST',
         body: formData
     })
     .then(() => {
-        // Set the thank you message
+        // Display the thank you message
         responseDiv.innerHTML = 'Thank you for your submission!';
-        // Add a short delay before hiding the form
-        setTimeout(() => {
-            form.style.display = 'none';
-        }, 500); // Adjust the delay here as needed
     })
     .catch((error) => {
+        // Display error message
         responseDiv.innerHTML = 'Error: ' + error;
+        // Optionally, you can show the form again if there's an error
+        // form.style.display = 'block';
     });
 });
-
 
     </script>
 </body>
