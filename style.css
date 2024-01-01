@@ -583,3 +583,22 @@ button.filter-button:hover {
     opacity: 1;
     visibility: visible;
 }
+
+
+
+
+
+.file-upload-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-upload-column {
+    flex: 1; /* Each column takes up equal width */
+    margin-right: 10px; /* Adjust as necessary */
+}
+
+/* If you want a little gap between the two columns */
+.file-upload-column:last-child {
+    margin-right: 0;
+}

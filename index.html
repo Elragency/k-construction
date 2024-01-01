@@ -980,12 +980,53 @@
                 
                             <h4 class="mb-3" id="nameLabel">Joindre un fichier</h4>
                 
-                            <div class="input-group mb-5">
-                              <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
-                                <label class="custom-file-label" for="inputGroupFile02" id="nameLabel">Choisir un Fichier</label>
-                              </div>
+                            <div class="file-upload-columns">
+                                <!-- Column 1 -->
+                                <div class="file-upload-column">
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile01" id="inputGroupFile01">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile01">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile02">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile03" id="inputGroupFile03">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile03">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Column 2 -->
+                                <div class="file-upload-column">
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile04" id="inputGroupFile04">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile04">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile05" id="inputGroupFile05">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile05">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile06" id="inputGroupFile06">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile06">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            
+
                             <p>
                                 <button class="btn btn-primary" type="submit response">ENVOYER</button>
                                 <div id="response"></div>
@@ -1130,13 +1171,26 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
         // Add a short delay before hiding the form
         setTimeout(() => {
             form.style.display = 'none';
-        }, 1500); // Adjust the delay here as needed
+        }, 500); // Adjust the delay here as needed
     })
     .catch((error) => {
         responseDiv.innerHTML = 'Error: ' + error;
     });
 });
 
+function updateFileLabel(input) {
+    var label = input.nextElementSibling;
+    var fileName = input.files[0] ? input.files[0].name : "Aucun fichier sélectionné";
+
+    label.innerHTML = fileName;
+}
+
+// Add event listeners to each file input
+document.querySelectorAll('.custom-file-input').forEach(item => {
+    item.addEventListener('change', function() {
+        updateFileLabel(this);
+    });
+});
  </script>
 </body>
 
