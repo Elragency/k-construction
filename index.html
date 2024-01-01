@@ -998,7 +998,7 @@
             </div> -->
 
             <section>
-                <form id="myForm" data-netlify="true"><p>
+                <form id="myForm" data-netlify="true" enctype="multipart/form-data"><p>
                     <!-- <label>Name <input type="text" name="name" /></label> -->
                     <input type="text" name="username" placeholder="Username" required>
                 </p>
@@ -1153,19 +1153,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script>
-        document.getElementById('myForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevents the default form submission action
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-            var formData = new FormData(this);
-            
-            fetch('/', {
-                method: 'POST',
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
-            })
-            .then(() => document.getElementById('response').innerHTML = 'Thank you for your submission!')
-            .catch((error) => document.getElementById('response').innerHTML = 'Error: ' + error);
-        });
+    var formData = new FormData(this);
+
+    fetch('/', {
+        method: 'POST',
+        body: formData // No need to set headers as formData sets the correct headers for multipart/form-data
+    })
+    .then(() => document.getElementById('response').innerHTML = 'Thank you for your submission!')
+    .catch((error) => document.getElementById('response').innerHTML = 'Error: ' + error);
+});
     </script>
 </body>
 
