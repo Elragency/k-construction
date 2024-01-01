@@ -1119,22 +1119,25 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
 
     var form = this; // Reference to the form
     var formData = new FormData(form);
+    var responseDiv = document.getElementById('response'); // Reference to the response div
 
     fetch('/', {
         method: 'POST',
-        body: formData // FormData will be sent correctly
+        body: formData
     })
     .then(() => {
-        // Hide the form
-        form.style.display = 'none';
-        // Show the thank you message
-        document.getElementById('response').innerHTML = 'Merci pour votre intérêt, nous allons vous recontacter dans les prochains 24h sans faute.';
+        // Set the thank you message
+        responseDiv.innerHTML = 'Thank you for your submission!';
+        // Add a short delay before hiding the form
+        setTimeout(() => {
+            form.style.display = 'none';
+        }, 500); // Adjust the delay here as needed
     })
     .catch((error) => {
-        // In case of an error, you can choose to show the form again or display an error message
-        document.getElementById('response').innerHTML = 'Error: ' + error;
+        responseDiv.innerHTML = 'Error: ' + error;
     });
 });
+
 
     </script>
 </body>
