@@ -905,7 +905,7 @@
         </div>
     </section>
 
-    <!-- <section id="info">
+    <section id="info">
         <div style="overflow: hidden;">
             <div class="container" data-aos="zoom-out">
                 <div class="row align-items-center ">
@@ -937,7 +937,7 @@
                                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                                     <h3 class="light text-uppercase">Parlez-nous de vos projets!</h2>
-                                    <form name="contact" id="myForm" netlify>
+                                    <form id="myForm" data-netlify="true" enctype="multipart/form-data">
                                         <div class="row">
                                           <div class="col-md-6 mb-3">
                                             <label for="Name" id="nameLabel">Nom Complet</label>
@@ -988,22 +988,26 @@
                                           </div>
                                         </div>
                                         <hr class="">
-                                        <button class="btn-slide btn-medium btn-light hover-slide-right text-uppercase" type="submit">ENVOYER</button> 
+                                        <!-- <button class="btn-slide btn-medium btn-light hover-slide-right text-uppercase" type="submit">ENVOYER</button>  -->
+                                        <p>
+                                            <button class="btn-slide btn-medium btn-light hover-slide-right text-uppercase" type="submit response">Send</button>
+                                            <div id="response"></div>
+                                        </p>
                                       </form>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </section>
-            </div> -->
+            </div>
 
-            <section>
+            <!-- <section>
                 <form id="myForm" data-netlify="true" enctype="multipart/form-data"><p>
-                    <!-- <label>Name <input type="text" name="name" /></label> -->
+
                     <input type="text" name="username" placeholder="Username" required>
                 </p>
                 <p>
-                    <!-- <label>Email <input type="email" name="email" /></label> -->
+
                     <input type="email" name="email" placeholder="Email" required>
                 </p>
                 <p>
@@ -1028,14 +1032,7 @@
                     <div id="response"></div>
                 </p>
             </form>
-
-                <!-- <form id="myForm" data-netlify="true">
-                    <input type="text" name="username" placeholder="Username" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <button type="submit">Submit</button>
-                </form>
-                <div id="response"></div> -->
-            </section>
+            </section> -->
                
     
 
