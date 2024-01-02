@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manic - La Compagnie de Construction Pour Vous</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body  data-bs-target="#header-nav" tabindex="0">
+
+
+    <nav class="navbar fixed-top navbar-expand-lg p-4 bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo-dark2.png" alt="logo de manic construction"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Manic</h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  active mx-2 px-3 mb-2 mb-lg-0"
+                                aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase mx-2 px-3 mb-2 mb-lg-0" href="#propos">À&nbsp;Propos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white text-uppercase mx-2 px-3 mb-2 mb-lg-0 dropdown-toggle"
+                                data-bs-toggle="dropdown" href="#services" role="button" aria-expanded="false"
+                                href="project">Nos&nbsp;Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services/reno-residentielle.html" class="dropdown-item text-uppercase ">Rénovations résidentielles<span</span></a></li>
+                                <li><a href="blog.html" class="dropdown-item text-uppercase ">Rénovations commerciales <span></span></a></li>
+                                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">Paysagement<span></span></a></li>
+                                <li><a href="booking.html" class="dropdown-item text-uppercase ">Platres <span></span></a></li>
+                                <li><a href="services.html" class="dropdown-item text-uppercase ">Services <span></span></a></li>
+                                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Réparation par injection</span></a></li>
+                                <li><a href="project.html" class="dropdown-item text-uppercase ">Cabanon <span></span></a></li>
+                                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Pricing <span></span></a></li>
+                                <!-- <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
+                                            class="badge bg-secondary">Pro</span></a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0"
+                                href="#projets">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#soumission" class="btn btn-outline-primary mx-2 px-3 py-2">Soumission Gratuite<iconify-icon
+                                icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="  d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end ">
+                        <ul class="navbar-nav social-div justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:instagram-line"
+                                        class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:twitter-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:linkedin-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:youtube-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <section id="hero" style="background-image: url(images/banner1-img2.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container padding-large">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <p class="header-top text-white mb-4">Les Experts de la construction sur la rive-sud de Montréal</p>
+                    <h2 class="display-1 text-white mb-5">Construction Manic</h2>
+                    <a href="#soumission">
+                        <button type="button" class="btn btn-outline-primary align-items-center "  >
+                            Soumission gratuite
+                            <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section id="propos">
+        <div style="overflow: hidden;">
+            <div class="container-fluid border-bottom" data-aos="zoom-out">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-md-6 padding-medium pe-5 border-end">
+                            <p class="header-top mb-3">Pourquoi Nous ?</p>
+                            <h2 class="display-4 ">Débutez votre projet avec les meilleurs entrepreneurs de votre région.
+                            </h2>
+                        </div>
+                        <div class="col-md-6 padding-medium-2 ps-md-5">
+                            <p class="ms-md-5 ">Manic Construction est une entreprise de construction renommée, connue pour son 
+                                engagement envers l'excellence et la qualité. Fondée sur des principes de durabilité, 
+                                d'innovation et de fiabilité, notre société s'est forgée une réputation solide dans le domaine 
+                                de la construction résidentielle, commerciale et industrielle. Avec une équipe d'experts hautement 
+                                qualifiés, Manic Construction offre une gamme complète de services, allant de la conception 
+                                architecturale à la réalisation de projets clés en main.
+                            </p>
+                            <a href="apropos.html" class="btn btn-primary ms-5 mt-3 ">À Propos <iconify-icon
+                                    icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- <section class="video">
+        <div style="overflow: hidden;">
+            <div class="video-content position-relative open-up" data-aos="zoom-out">
+                <div class="video-bg">
+                    <img src="images/vid-img.jpg" alt="video" class="video-image img-fluid">
+                </div>
+                <div class="video-player position-absolute">
+                    <a class='youtube' href="https://www.youtube.com/embed/RLHSvmh4rHw">
+                        <iconify-icon icon="ion:play-sharp" class="video-icon p-5"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="info">
+        <div style="overflow: hidden;">
+            <div class="container" data-aos="zoom-out">
+                <div class="row align-items-center ">
+                    <div class="col-md-4 text-center padding-medium border-end">
+                        <p class="header-top mb-4">Nous rejoindre</p>
+                        <p class="mb-2">+514 777 7777</p>
+                        <p class="mb-2">elragency@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 text-center padding-medium border-end">
+                        <p class="header-top mb-4">Nos heures d'ouvertures</p>
+                        <p class="mb-2">Lun - Ven: 6 am - 6 pm</p>
+                        <p class="mb-2">Sam - Dim: Sur Demande</p>
+                    </div>
+                    <div class="col-md-4 text-center padding-medium">
+                        <p class="header-top mb-4">Notre adresse</p>
+                        <p class="mb-2"> 2001 Boul. de Rome, </p>
+                        <p class="mb-2">Brossard, QC J4W 2W1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="soumission" >
+        <section class="signup-section jarallax d-flex align-items-center py-5">
+            <div class="container ">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="text-white"></i>
+                        <form id="myForm" data-netlify="true" enctype="multipart/form-data">
+                            <h3 class="light text-uppercase">Parlez-nous de vos projets!</h2>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label for="Name" id="nameLabel">Nom Complet</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Entrer votre Nom..." value="" required>
+                                <div class="invalid-feedback">
+                                  Un nom valide est requis.
+                                </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="lastName" id="nameLabel">Numéro de téléphone</label>
+                                <input type="phone" class="form-control" name="phone" id="phone" placeholder="Votre numéro de téléphone..." value="" required>
+                                <div class="invalid-feedback">
+                                    Un numéro de téléphone valide est requis.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" id="nameLabel">Courriel <span class="text-muted"></span></label>
+                                    <input type="email" class="form-control" name="Email" id="email" placeholder="Entrer votre courriel...">
+                                    <div class="invalid-feedback">
+                                      Le courriel ne semble pas valide ...
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="address" id="nameLabel">Adresse</label>
+                                    <input type="textarea" class="form-control" name="address" id="address" placeholder="Entrer votre adresse..." required>
+                                    <div class="invalid-feedback">
+                                      L'adresse ne semble pas valide ...
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="text" id="nameLabel" >Comment pouvons-nous vous aider</label>
+                                <textarea class="form-control" name="sujet" id="sujet" placeholder="Parlez-nous de vos projets" required></textarea>
+                                <div class="invalid-feedback">
+                                    Entrez votre message....
+                                </div>
+                              </div>
+    
+                
+                            <h4 class="mb-3" id="nameLabel">Joindre un fichier</h4>
+                
+                            <div class="file-upload-columns">
+                                <!-- Column 1 -->
+                                <div class="file-upload-column">
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile01" id="inputGroupFile01">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile01">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile02">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile03" id="inputGroupFile03">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile03">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Column 2 -->
+                                <div class="file-upload-column">
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile04" id="inputGroupFile04">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile04">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile05" id="inputGroupFile05">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile05">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile06" id="inputGroupFile06">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile06">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <p>
+                                <button class="btn btn-primary" type="submit response">ENVOYER</button>
+                                <div id="response"></div>
+                            </p>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+                    
+
+
+    <section id="footer">
+        <div class="container footer-containerG mt-5 mt-md-0 pt-3">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+                <div class=" col-md-3 my-5 mt-md-0 ">
+                    <img src="images/logo-dark3.png" alt="logo de la compagnie manic construction" class="">
+                    <p class="my-4">Pour tous vos projets de rénovations sur la Rive-Sud de Montréal, faites affaire avec Manic Construction!</p>
+                    <div class="d-flex align-items-center ">
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer active pe-4"
+                                icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:instagram"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:linkedin"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:youtube"></iconify-icon></a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">À Propos</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="apropos.html" class="nav-link text-uppercase p-0 ">Construction Manic</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="apropos.html#histoire" class="nav-link text-uppercase p-0 ">Qui sommes-nous</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="apropos.html#mission" class="nav-link text-uppercase p-0 ">Notre Mission</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="apropos.html#valeur" class="nav-link text-uppercase p-0 ">Nos Valeurs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">Nos services</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Notre expérience</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Service résidentiel</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Service commercial</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Service industriel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">Nous Rejoindre</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Notre adresse</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="contact.html"
+                                class="nav-link text-uppercase p-0 ">Contact</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="contact.html"
+                                class="nav-link text-uppercase p-0 ">Adresse</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">Notre Expertise</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Salle De Bain</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Cuisine</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Condos</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+            </footer>
+        </div>
+
+
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p>© 2024 Construction Manic | Tous droits réservés</p>
+
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <p class="">© 2024 Réalisé par:<a href="https://elragency.com"
+                            class="website-link text-decoration-none" target="_blank"> <b>L'Agence ELR</b></a></p>
+                </div>
+
+            </footer>
+        </div>
+    </section>
+
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script>
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var form = this; // Reference to the form
+    var formData = new FormData(form);
+    var responseDiv = document.getElementById('response'); // Reference to the response div
+
+    fetch('/', {
+        method: 'POST',
+        body: formData
+    })
+    .then(() => {
+        // Set the thank you message
+        responseDiv.innerHTML = 'Merci pour votre intérêt, nous allons vous contacter dans les prochaines 24h.';
+        // Add a short delay before hiding the form
+        setTimeout(() => {
+            form.style.display = 'none';
+        }, 500); // Adjust the delay here as needed
+    })
+    .catch((error) => {
+        responseDiv.innerHTML = 'Error: ' + error;
+    });
+});
+
+function updateFileLabel(input) {
+    var label = input.nextElementSibling;
+    var fileName = input.files[0] ? input.files[0].name : "Aucun fichier sélectionné";
+
+    label.innerHTML = fileName;
+}
+
+// Add event listeners to each file input
+document.querySelectorAll('.custom-file-input').forEach(item => {
+    item.addEventListener('change', function() {
+        updateFileLabel(this);
+    });
+});
+ </script>
+
+
+
+
+ <script>
+    (function ($) {
+
+"use strict";
+
+// background color when scroll 
+
+
+  // init Chocolat light box
+  var initChocolat = function () {
+    Chocolat(document.querySelectorAll('.image-link'), {
+      imageSize: 'contain',
+      loop: true,
+    })
+  }
+
+$(document).ready(function () {
+
+  //testimonial swiper
+ 
+  var swiper = new Swiper(".project-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".icon-arrow-right",
+      prevEl: ".icon-arrow-left",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+
+      },
+    }
+  });
+
+
+  $(".youtube").colorbox({
+    iframe: true,
+    innerWidth: 960,
+    innerHeight: 585
+  });
+
+
+      // Animate on Scroll
+      AOS.init({
+        duration: 1000,
+        once: true,
+      })
+  
+      window.addEventListener("load", (event) => {
+        //isotope
+        $('.isotope-container').isotope({
+          // options
+          itemSelector: '.item',
+          layoutMode: 'masonry'
+        });
+  
+  
+  
+        // Initialize Isotope
+        var $container = $('.isotope-container').isotope({
+          // options
+          itemSelector: '.item',
+          layoutMode: 'masonry'
+        });
+  
+        $(document).ready(function () {
+          //active button
+          $('.filter-button').click(function () {
+            $('.filter-button').removeClass('active');
+            $(this).addClass('active');
+          });
+        });
+  
+        // Filter items on button click
+        $('.filter-button').click(function () {
+          var filterValue = $(this).attr('data-filter');
+          if (filterValue === '*') {
+            // Show all items
+            $container.isotope({ filter: '*' });
+          } else {
+            // Show filtered items
+            $container.isotope({ filter: filterValue });
+          }
+        });
+  
+      });
+  
+  
+      initChocolat();
+
+
+});
+
+
+})(jQuery);
+
+ </script>
+
+ 
+</body>
+
+</html>
+
+

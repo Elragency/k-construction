@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Manic - La Compagnie de Lavage De Vitres</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+    <nav class="navbar fixed-top navbar-expand-lg container-fluid p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo-dark2.png" alt="logo de manic construction"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Manic</h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  active mx-2 px-3 mb-2 mb-lg-0"
+                                aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white text-uppercase mx-2 px-3 mb-2 mb-lg-0 dropdown-toggle"
+                                data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
+                                href="#">Nos&nbsp;Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services/reno-residentielle.html" class="dropdown-item text-uppercase ">Rénovations résidentielles<span</span></a></li>
+                                <li><a href="blog.html" class="dropdown-item text-uppercase ">Rénovations commerciales <span></span></a></li>
+                                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">Paysagement<span></span></a></li>
+                                <li><a href="booking.html" class="dropdown-item text-uppercase ">Platres <span></span></a></li>
+                                <li><a href="services.html" class="dropdown-item text-uppercase ">Services <span></span></a></li>
+                                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Réparation par injection</span></a></li>
+                                <li><a href="project.html" class="dropdown-item text-uppercase ">Cabanon <span></span></a></li>
+                                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Pricing <span></span></a></li>
+                                <!-- <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
+                                            class="badge bg-secondary">Pro</span></a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0"
+                                href="#about">À&nbsp;Propos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">Nos&nbsp;services</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#soumission">Contactez&nbsp;Nous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0"
+                                href="#project">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#soumission" class="btn btn-outline-primary mx-2 px-3 py-2">Soumission Gratuite<iconify-icon
+                                icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="  d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end ">
+                        <ul class="navbar-nav social-div justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:instagram-line"
+                                        class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:twitter-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:linkedin-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-3" href="#">
+                                    <iconify-icon icon="ri:youtube-fill" class="social-icon text-white"></iconify-icon>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" style="background-image:url(images/banner1-img1.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container padding-large">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <p class="header-top text-white mb-4">Les Experts de la construction</p>
+                    <h2 class="display-1 text-white mb-5">Qui Sommes-nous?</h2>
+                    <!-- <button type="button" class="btn btn-outline-primary align-items-center ">
+                        Soumission gratuite
+                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<body class="header-fixed page no-sidebar header-style-2 topbar-style-1 menu-has-search">
+    <div id="main-content" class="site-main clearfix">
+        <div id="content-wrap">
+            <div id="site-content" class="site-content clearfix">
+                <div id="inner-content" class="inner-content-wrap">
+                   <div class="page-content">
+                        <!-- ICONBOX -->
+                        <div class="row-iconbox">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="themesflat-spacer clearfix" data-desktop="61" data-mobile="60" data-smobile="60"></div>
+                                        <div class="themesflat-headings style-1 text-center clearfix">
+                                            <p class="header-top my-5">Qui est Manic Construction</p>
+                                            <h2 class=" text-black display-4 ">Ce que nous faisons</h2>
+                                            <div class="flex mt-2 mb-2">
+                                            <div class="sep has-icon width-125 clearfix">
+                                            </div>
+                                            <h4 class="sub-heading my-4">Manic Construction a plus de 359 projets réalisés - jumelé avec 25 années d'expérience, nous sommes les meilleurs pour vous servir.</h4>
+                                        </div>
+                                        <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
+                                    </div>
+                                    <!-- /.col-md-12 -->
+                                </div>
+                                <!-- /.row -->
+
+                                <div class="row">
+                                    <div class="col-md-4" data-aos="zoom-out">
+                                        <div class="themesflat-content-box clearfix" data-margin="0 5px 0 5px" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 clearfix">
+                                                <div class="icon-wrap">
+                                                    <i class="autora-icon-quality"></i>
+                                                </div>
+                                                <div class="text-wrap">
+                                                    <h5 class="heading"><a href="#">QUALITÉ</a></h5>
+                                                    <div class="sep clearfix"></div>
+                                                    <p class="sub-heading">Manic Construction se distingue par une qualité inégalée, garantissant précision, durabilité et excellence dans chaque projet.</p>
+                                                </div>
+                                            </div><!-- /.themesflat-icon-box -->
+                                        </div><!-- /.themesflat-content-box -->                                         
+                                    </div><!-- /.col-md-4 -->
+                                    <div class="col-md-4"  data-aos="zoom-out" data-aos-delay="200">
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>
+                                        <div class="themesflat-content-box clearfix" data-margin="0 5px 0 5px" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 clearfix">
+                                                <div class="icon-wrap">
+                                                    <i class="autora-icon-time"></i>
+                                                </div>
+                                                <div class="text-wrap">
+                                                    <h5 class="heading"><a href="#">PROFESSIONALISME</a></h5>
+                                                    <div class="sep clearfix"></div>
+                                                    <p class="sub-heading">Nous incarnons le professionnalisme, offrant expertise, fiabilité et un service clientèle hors pair à chaque étape.</p>
+                                                </div>
+                                            </div><!-- /.themesflat-icon-box -->
+                                        </div><!-- /.themesflat-content-box -->
+                                    </div><!-- /.col-md-4 -->
+                                    <div class="col-md-4"data-aos="zoom-out" data-aos-delay="400">
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>
+                                        <div class="themesflat-content-box clearfix" data-margin="0 5px 0 5px" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 clearfix">
+                                                <div class="icon-wrap">
+                                                    <i class="autora-icon-author"></i>
+                                                </div>
+                                                <div class="text-wrap">
+                                                    <h5 class="heading"><a href="#">ABORDABLE</a></h5>
+                                                    <div class="sep clearfix"></div>
+                                                    <p class="sub-heading">Nous offrons des solutions de qualité au meilleur prix, rendant l'excellence en construction accessible et abordable.</p>
+                                                </div>
+                                            </div><!-- /.themesflat-icon-box -->
+                                        </div><!-- /.themesflat-content-box -->
+                                    </div><!-- /.col-md-4 -->
+                                </div><!-- /.row -->
+
+                                <div class="row" id="histoire">
+                                    <div class="col-md-12">
+                                        <div class="themesflat-spacer clearfix" data-desktop="41" data-mobile="35" data-smobile="35"></div>
+                                        <div class="elm-button text-center">
+                                            <h3 href="#" class="text-black display-4">NOTRE HISTOIRE</h3>
+                                        </div>
+                                        <div class="themesflat-spacer clearfix" data-desktop="73" data-mobile="60" data-smobile="60"></div>
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container -->
+                        </div>
+                        <!-- END ICONBOX -->
+
+                        <!-- ABOUT -->
+                        <div class="row-about"  data-aos="zoom-out">
+                            <div class="container-fluid">
+                                <div class="row equalize sm-equalize-auto">
+                                    <div class="col-md-6 half-background style-1">
+                                        
+                                    </div><!-- /.col-md-6 -->
+
+                                    <div class="col-md-6 bg-light-grey mT-2">
+                                        <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="35" data-smobile="35"></div>
+                                        <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
+                                            <div class="themesflat-headings style-1 clearfix">
+                                                <h2 class="heading">BIENVENUE CHEZ MANIC CONSTRUCTION</h2>
+                                                <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                               
+                                                <p class="sub-heading margin-top-30">Nous avons réalisé avec succès des projets dans de nombreuse ville. Construction Manic a fait ses preuves dans les domaines suivants :</p>
+                                            </div>
+                                            <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
+                                            <div class="content-list">
+                                                <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                    <div class="inner">
+                                                        <span class="item">
+                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                            <span class="text">Terminer les projets dans les délais et respecter les directives budgétaires</span>
+                                                        </span>
+                                                    </div>
+                                                </div><!-- /.themeslat-list -->
+                                                <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                    <div class="inner">
+                                                        <span class="item">
+                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                            <span class="text">Qualité de fabrication élevée</span>
+                                                        </span>
+                                                    </div>
+                                                </div><!-- /.themeslat-list -->
+                                                <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                    <div class="inner">
+                                                        <span class="item">
+                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                            <span class="text">Répondre aux diverses exigences des organismes gouvernementales</span>
+                                                        </span>
+                                                    </div>
+                                                </div><!-- /.themeslat-list -->
+                                                <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                    <div class="inner">
+                                                        <span class="item">
+                                                            <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                            <span class="text">Mettre en œuvre des précautions et des procédures de sécurité appropriées</span>
+                                                        </span>
+                                                    </div>
+                                                </div><!-- /.themeslat-list -->
+                                            </div><!-- /.content-list -->
+                                            <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
+                                            <div class="elm-button">
+                                                <a href="#soumission"  class="themesflat-button btn btn-primary ms-5 mt-3 text-black">CONTACTEZ-NOUS</a>
+                                            </div>
+                                        </div><!-- /.themesflat-content-box --> 
+                                        <div class="themesflat-spacer clearfix" data-desktop="76" data-mobile="60" data-smobile="60"></div>
+                                    </div><!-- /.col-md-6 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container-fluid -->
+                        </div>
+                        <!-- END ABOUT -->
+
+                        <!-- COUNTER -->
+                        <div class="row-counter parallax parallax-4 parallax-overlay">
+                            <div class="container">
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <div class="themesflat-spacer clearfix" data-desktop="92" data-mobile="60" data-smobile="60"></div>
+                                    </div>
+                                    <!-- /.col-md-12 -->
+                                </div>
+                                <!-- /.row -->                                    
+                                <div class="themesflat-row gutter-30 separator light clearfix">
+                                    <div class="col span_1_of_3 counter-column">
+                                        <div class="themesflat-content-box clearfix" data-margin="0 0 0 0" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-counter style-1 align-center clearfix">
+                                                <div class="counter-item">
+                                                    <div class="inner">
+                                                        <div class="text-wrap">
+                                                            <div class="number-wrap">
+                                                                <span class="number" data-speed="2000" data-to="25" data-inviewport="yes">25</span><span class="suffix">+</span>
+                                                            </div>
+                                                            <h3 class="heading margin-right-6">ANNÉES D'EXPÉRIENCE</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.themesflat-counter -->
+                                        </div> 
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="35" data-smobile="35"></div>                                                                                  
+                                    </div><!-- /.col-md-3 -->
+                                    <div class="col span_1_of_3 counter-column">                                            
+                                        <div class="themesflat-content-box clearfix" data-margin="0 0 0 0" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-counter style-1 align-center clearfix">
+                                                <div class="counter-item">
+                                                    <div class="inner">
+                                                        <div class="text-wrap">
+                                                            <div class="number-wrap">
+                                                                <span class="number" data-speed="2000" data-to="359" data-inviewport="yes">359</span><span class="suffix">+</span>
+                                                            </div>
+                                                            <h3 class="heading margin-right-6">PROJETS COMPLÉTÉS</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.themesflat-counter -->
+                                        </div> 
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="35" data-smobile="35"></div>                                      
+                                    </div><!-- /.col-md-3 -->
+                                    <div class="col span_1_of_3 counter-column">
+                                        <div class="themesflat-content-box clearfix" data-margin="0 0 0 0" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-counter style-1 align-center clearfix">
+                                                <div class="counter-item">
+                                                    <div class="inner">
+                                                        <div class="text-wrap">
+                                                            <div class="number-wrap">
+                                                                <span class="number" data-speed="2000" data-to="264" data-inviewport="yes">264</span><span class="suffix">+</span>
+                                                            </div>
+                                                            <h3 class="heading margin-right-6">CLIENTS SATISFAITS</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.themesflat-counter -->
+                                        </div>  
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>                                     
+                                    </div><!-- /.col-md-3 -->
+                                    <div class="col span_1_of_3 counter-column">
+                                        <div class="themesflat-content-box clearfix" data-margin="0 0 0 0" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-counter style-1 align-center clearfix">
+                                                <div class="counter-item">
+                                                    <div class="inner">
+                                                        <div class="text-wrap">
+                                                            <div class="number-wrap">
+                                                                <span class="number" data-speed="2000" data-to="5" data-inviewport="yes">5</span><span class="suffix">+</span>
+                                                            </div>
+                                                            <h3 class="heading margin-right-6">EMPLOYÉS MANIC</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.themesflat-counter -->
+                                        </div>                                        
+                                    </div>
+                                    <!-- /.col-md-3 -->
+                                </div>
+                                <!-- /.row -->
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <div class="themesflat-spacer clearfix" data-desktop="72" data-mobile="60" data-smobile="60"></div>                                        
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container -->
+                            <div class="bg-parallax-overlay overlay-black style2"></div>
+                        </div>
+                    </div>
+                        <!-- END COUNTER -->
+
+                        <!-- TABS -->
+                        <div class="row-tabs" data-aos="zoom-out">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="themesflat-spacer clearfix" data-desktop="61" data-mobile="60" data-smobile="60"></div>
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="themesflat-content-box clearfix" data-margin="0 18px 0 0" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-headings style-1 clearfix">
+                                                <h2 class="heading">APERÇU</h2>
+                                                <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                          
+                                            </div>
+                                            <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="35" data-smobile="35"></div>
+                                            <div class="themesflat-tabs style-1 clearfix">
+                                                <ul class="tab-title clearfix">
+                                                    <li class="item-title active">
+                                                        <span class="inner">Notre focus</span>
+                                                    </li>
+                                                    <li class="item-title">
+                                                        <span class="inner">Dédié</span>
+                                                    </li>
+                                                    <li class="item-title">
+                                                        <span class="inner">Engagé</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="tab-content-wrap clearfix">
+                                                    <div class="tab-content">
+                                                        <div class="item-content">                                                            
+                                                            <p>Notre objectif est de dépasser vos objectifs, de respecter vos délais et de gérer avec succès votre budget. 
+                                                                Nous fournissons à nos clients des services d’entreprise générale, de gestion de construction, d’étude de site et de 
+                                                                conception-construction de premier ordre.</p>
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Nous avons réalisé avec succès des projets pour un nombre important de clients satisfaits.</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Nous sommes autorisés à effectuer des travaux d'entreprise générale et avons les électriciens, 
+                                                                            plombiers et autres quarts de métier en règle pour tous vos besoins. </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Nous serons ouverts à l'obtention de nouvelles licences si une opportunité se présentes</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->                                                        
+                                                        </div>
+                                                    </div><!-- /.tab-content -->
+                                                    <div class="tab-content">
+                                                        <div class="item-content">                                                            
+                                                            <p>Chez Manic Construction, notre engagement envers nos clients est notre priorité. Nous visons non seulement à rencontrer vos attentes, mais à les surpasser, en respectant scrupuleusement vos délais et votre budget. Nos services haut de gamme incluent la gestion de construction, l'étude de site, et la conception-construction, tous dédiés à réaliser votre vision.</p>
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Nous avons bâti notre réputation sur la satisfaction de nos clients, en réalisant avec succès une multitude de projets répondant à leurs besoins spécifiques.</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Notre équipe est hautement qualifiée et autorisée à mener à bien des travaux complexes, garantissant des résultats professionnels dans tous les aspects de votre projet.</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Nous sommes toujours prêts à élargir nos compétences et obtenir de nouvelles licences pour mieux répondre à vos projets ambitieux.</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->                                                                                                     
+                                                        </div>
+                                                    </div><!-- /.tab-content -->
+                                                    <div class="tab-content">
+                                                        <div class="item-content">                                                            
+                                                            <p>Chez Manic Construction, nous sommes dédiés à fournir à nos clients une expérience exceptionnelle. Notre engagement se traduit par une approche centrée sur le client, garantissant satisfaction et excellence à chaque étape du projet</p>
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Écoute Active des Clients : Nous prenons le temps de comprendre vos besoins et vos aspirations pour garantir que chaque projet reflète vos attentes.</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Transparence Totale : Nous maintenons une communication ouverte et honnête tout au long du processus, assurant une confiance et une clarté sans faille. </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->
+                                                            <div class="themesflat-list has-icon style-1 icon-left ofset-padding-32 clearfix">
+                                                                <div class="inner">
+                                                                    <span class="item">
+                                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                                        <span class="text">Service Après-Projet : Notre dévouement envers nos clients continue même après la fin des travaux, assurant un suivi et une assistance pour garantir votre entière satisfaction.</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- /.themeslat-list -->                                                        
+                                                        </div>
+                                                    </div><!-- /.tab-content -->
+                                                </div><!-- /.tab-content-wrap -->
+                                            </div><!-- /.themesflat-tabs -->
+                                        </div><!-- /.themesflat-content-box -->                                                
+                                    </div><!-- /.col-md-6 -->
+
+                                    <div class="col-md-6">
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>
+                                        <div class="themesflat-content-box" data-margin="0 0 0 18px" data-mobilemargin="0 0 0 0">
+                                            <div class="themesflat-headings style-1 clearfix">
+                                                <h2 class="heading">FAQ</h2>
+                                                <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                          
+                                            </div>
+                                            <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="35" data-smobile="35"></div>
+                                            <div class="themesflat-accordions style-1 has-icon icon-left iconstyle-1 clearfix">
+                                                <div class="accordion-item active">
+                                                    <h3 class="accordion-heading"><span class="inner">Êtes-vous en règle pour faire des travaux dans les condos?</span></h3>
+                                                    <div class="accordion-content">
+                                                        <div>Oui! Nous possédons notre licence RBQ et tous nos professionnels sont accrédités par les instances gouvernementales nécessaires pour effectuer tout type de travaux nécessaires.</div>
+                                                    </div>
+                                                </div><!-- /.accordion-item -->
+                                                <div class="accordion-item">
+                                                    <h3 class="accordion-heading"><span class="inner">Êtes-vous assuré?</span></h3>
+                                                    <div class="accordion-content">
+                                                        <div>Bien sûr! La sécurité des investissements de nos clients est notre priorité. C'est pourquoi nous sommes assurés jusqu'à 2 millions de dollars pour tout type de dommage.</div>
+                                                    </div>
+                                                </div><!-- /.accordion-item -->
+                                                <div class="accordion-item ">
+                                                    <h3 class="accordion-heading"><span class="inner">Quelles sont vos modalités de paiement?</span></h3>
+                                                    <div class="accordion-content">
+                                                        <div>Bien que cela dépend de la grosseur de votre projet ainsi que de l'échéancier, nous sommes assez flexibles afin de nous assurer que le tout vous convienne. Nous acceptons les virements bancaire, le cash, les virements interac, les chèques ou les carte de crédit.</div>
+                                                    </div>
+                                                </div><!-- /.accordion-item -->
+                                            </div><!-- /.themesflat-accordion -->
+                                        </div><!-- /.themesflat-content-box -->                                                
+                                    </div><!-- /.col-md-6 -->
+                                </div><!-- /.row -->
+                                <div class="row"  id="valeur">
+                                    <div class="col-md-12" id="mission">
+                                        <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="0"></div>
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container -->
+                        </div>
+                   </div><!-- /.page-content -->
+                </div><!-- /#inner-content -->
+            </div><!-- /#site-content -->
+        </div><!-- /#content-wrap -->
+    </div><!-- /#main-content -->
+
+
+    <section id="info">
+        <div style="overflow: hidden;">
+            <div class="container" data-aos="zoom-out">
+                <div class="row align-items-center ">
+                    <div class="col-md-4 text-center padding-medium border-end">
+                        <p class="header-top mb-4">Nous rejoindre</p>
+                        <p class="mb-2">+514 777 7777</p>
+                        <p class="mb-2">elragency@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 text-center padding-medium border-end">
+                        <p class="header-top mb-4">Nos heures d'ouvertures</p>
+                        <p class="mb-2">Lun - Ven: 6 am - 6 pm</p>
+                        <p class="mb-2">Sam - Dim: 9 am - 4 pm</p>
+                    </div>
+                    <div class="col-md-4 text-center padding-medium">
+                        <p class="header-top mb-4">Notre adresse</p>
+                        <p class="mb-2"> 2001 Boul. de Rome, </p>
+                        <p class="mb-2">Brossard, QC J4W 2W1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="soumission" >
+        <section class="signup-section jarallax d-flex align-items-center py-5">
+            <div class="container ">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="text-white"></i>
+                        <form id="myForm" data-netlify="true" enctype="multipart/form-data">
+                            <h3 class="light text-uppercase">Parlez-nous de vos projets!</h2>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label for="Name" id="nameLabel">Nom Complet</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Entrer votre Nom..." value="" required>
+                                <div class="invalid-feedback">
+                                  Un nom valide est requis.
+                                </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="lastName" id="nameLabel">Numéro de téléphone</label>
+                                <input type="phone" class="form-control" name="phone" id="phone" placeholder="Votre numéro de téléphone..." value="" required>
+                                <div class="invalid-feedback">
+                                    Un numéro de téléphone valide est requis.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" id="nameLabel">Courriel <span class="text-muted"></span></label>
+                                    <input type="email" class="form-control" name="Email" id="email" placeholder="Entrer votre courriel...">
+                                    <div class="invalid-feedback">
+                                      Le courriel ne semble pas valide ...
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="address" id="nameLabel">Adresse</label>
+                                    <input type="textarea" class="form-control" name="address" id="address" placeholder="Entrer votre adresse..." required>
+                                    <div class="invalid-feedback">
+                                      L'adresse ne semble pas valide ...
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="text" id="nameLabel" >Comment pouvons-nous vous aider</label>
+                                <textarea class="form-control" name="sujet" id="sujet" placeholder="Parlez-nous de vos projets" required></textarea>
+                                <div class="invalid-feedback">
+                                    Entrez votre message....
+                                </div>
+                              </div>
+    
+                
+                            <h4 class="mb-3" id="nameLabel">Joindre un fichier</h4>
+                
+                            <div class="file-upload-columns">
+                                <!-- Column 1 -->
+                                <div class="file-upload-column">
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile01" id="inputGroupFile01">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile01">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile02">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile03" id="inputGroupFile03">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile03">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Column 2 -->
+                                <div class="file-upload-column">
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile04" id="inputGroupFile04">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile04">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile05" id="inputGroupFile05">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile05">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="inputGroupFile06" id="inputGroupFile06">
+                                            <!-- <label class="custom-file-label" for="inputGroupFile06">Choisir un Fichier</label> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <p>
+                                <button class="btn btn-primary" type="submit response">ENVOYER</button>
+                                <div id="response"></div>
+                            </p>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+                    
+
+
+    <section id="footer">
+        <div class="container footer-containerG mt-5 mt-md-0 pt-3">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+                <div class=" col-md-3 my-5 mt-md-0 ">
+                    <img src="images/logo-dark3.png" alt="logo de la compagnie manic construction" class="">
+                    <p class="my-4">Illuminez Votre Monde, Un Carreau à la Fois avec Construction Manic!</p>
+                    <div class="d-flex align-items-center ">
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer active pe-4"
+                                icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:instagram"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:linkedin"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:youtube"></iconify-icon></a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">À Propos</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">De Construction Manic</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Qui sommes-nous</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Notre Mission</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Nos Valeurs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">Nos services</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Notre expérience</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Service résidentiel</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Serbice commercial</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Service industriel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">Nous Rejoindre</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Notre adresse</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Contact</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Adresse</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="fs-5 mt-3 mt-md-0 mb-3">Plus d'informations</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">01</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">02</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">03</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+            </footer>
+        </div>
+
+
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p>© 2024 Construction Manic | Tous droits réservés</p>
+
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <p class="">© 2024 Réalisé par:<a href="https://elragency.com"
+                            class="website-link text-decoration-none" target="_blank"> <b>L'Agence ELR</b></a></p>
+                </div>
+
+            </footer>
+        </div>
+    </section>
+
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script>
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var form = this; // Reference to the form
+    var formData = new FormData(form);
+    var responseDiv = document.getElementById('response'); // Reference to the response div
+
+    fetch('/', {
+        method: 'POST',
+        body: formData
+    })
+    .then(() => {
+        // Set the thank you message
+        responseDiv.innerHTML = 'Merci pour votre intérêt, nous allons vous contacter dans les prochaines 24h.';
+        // Add a short delay before hiding the form
+        setTimeout(() => {
+            form.style.display = 'none';
+        }, 500); // Adjust the delay here as needed
+    })
+    .catch((error) => {
+        responseDiv.innerHTML = 'Error: ' + error;
+    });
+});
+
+function updateFileLabel(input) {
+    var label = input.nextElementSibling;
+    var fileName = input.files[0] ? input.files[0].name : "Aucun fichier sélectionné";
+
+    label.innerHTML = fileName;
+}
+
+// Add event listeners to each file input
+document.querySelectorAll('.custom-file-input').forEach(item => {
+    item.addEventListener('change', function() {
+        updateFileLabel(this);
+    });
+});
+ </script>
+
+ <!-- Javascript -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/animsition.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/countto.js"></script>
+<script src="assets/js/equalize.min.js"></script>
+<script src="assets/js/jquery.isotope.min.js"></script>
+<script src="assets/js/owl.carousel2.thumbs.js"></script>
+
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/gmap3.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIEU6OT3xqCksCetQeNLIPps6-AYrhq-s&amp;region=GB"></script>
+<script src="assets/js/shortcodes.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Revolution Slider -->
+<script src="includes/rev-slider/js/jquery.themepunch.tools.min.js"></script>
+<script src="includes/rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/rev-slider.js"></script>
+<!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->  
+<script src="includes/rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="includes/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+</body>
+
+</html>
+
+
