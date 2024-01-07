@@ -1660,3 +1660,23 @@ button.filter-button:hover {
 }
 
 
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%; /* Position the dropdown menu to the right */
+      margin-top: -6px;
+      margin-left: -1px;
+  }
+  
+  /* Show the submenu on hover */
+  .dropdown-submenu:hover .dropdown-menu {
+      display: block;
+  }
+  
+  /* Style adjustments for submenu items */
+  .dropdown-submenu .dropdown-item {
+      padding-left: 20px;
+  }
