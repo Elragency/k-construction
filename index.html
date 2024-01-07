@@ -49,7 +49,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">K Construction</h5>
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">K&nbsp;Construction</h5>
                     <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -71,20 +71,20 @@
                                 <li class="dropdown-submenu">
                                     <a href="#" class="dropdown-item text-uppercase dropdown-toggle">Intérieur</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="services/cuisine.html" class="dropdown-item">Cuisine</a></li>
-                                        <li><a href="services/salledebain.html" class="dropdown-item">Toilette</a></li>
-                                        <li><a href="services/plancher.html" class="dropdown-item">Plancher</a></li>
-                                        <li><a href="services/gypse.html" class="dropdown-item">Platres</a></li>
-                                        <li><a href="services/gypse.html" class="dropdown-item">Peinture</a></li>
+                                        <li><a href="services/interieur/cuisine.html" class="dropdown-item">Cuisine</a></li>
+                                        <li><a href="services/interieur/salledebain.html" class="dropdown-item">Toilette</a></li>
+                                        <li><a href="services/interieur/plancher.html" class="dropdown-item">Plancher</a></li>
+                                        <li><a href="services/interieur/gypse.html" class="dropdown-item">Platres</a></li>
+                                        <li><a href="services/interieur/gypse.html" class="dropdown-item">Peinture</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a href="#" class="dropdown-item text-uppercase dropdown-toggle">Extérieur</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="services/paysagement.html" class="dropdown-item">Paysagement</a></li>
-                                        <li><a href="services/cabanon.html" class="dropdown-item">Terrasses & Cabanons</a></li>
-                                        <li><a href="services/portes.html" class="dropdown-item">Portes & Fenetres</a></li>
-                                        <li><a href="services/signe.html" class="dropdown-item">Signes</a></li>
+                                        <li><a href="services/exterieur/paysagement.html" class="dropdown-item">Paysagement</a></li>
+                                        <li><a href="services/exterieur/cabanon.html" class="dropdown-item">Terrasses & Cabanons</a></li>
+                                        <li><a href="services/exterieur/portes.html" class="dropdown-item">Portes & Fenetres</a></li>
+                                        <li><a href="services/exterieur/signe.html" class="dropdown-item">Signes</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
@@ -168,7 +168,7 @@
             <div class="row">
                 <div class="col-md-6 offset-md-3 text-center">
                     <p class="header-top text-white mb-4">Les Experts de la construction sur la rive-sud de Montréal</p>
-                    <h2 class="display-1 text-white mb-5">K-Construction</h2>
+                    <h2 class="display-1 text-white mb-5">K&nbsp;Construction</h2>
                     <a href="#soumission">
                         <button type="button" class="btn btn-outline-primary align-items-center "  >
                             Soumission gratuite
@@ -249,131 +249,449 @@
 
     </section>
 
-    <section id="services" class="py-5" style="background-image:url(images/project-img.jpg);">
+    <section id="services" class="my-5">
         <div style="overflow: hidden;">
-            <div data-aos="zoom-out">
-                <div class="container position-relative d-sm-flex py-5 mt-5 mb-2">
-                    <div>
-                        <p class="header-top mb-3">Services</p>
-                        <h2 class=" text-white display-4 ">Ce que nous faisons</h2>
-                    </div>
+            <div class="container py-5" data-aos="zoom-out">
 
-                    <div class="swiper-arrow position-absolute end-0 mt-sm-5 ms-3">
-                        <iconify-icon icon="teenyicons:arrow-left-solid" class="icon-arrow-left me-3"></iconify-icon>
-                        <iconify-icon icon="teenyicons:arrow-right-solid" class="icon-arrow-right"></iconify-icon>
-                    </div>
-                </div>
+                <p class="header-top">Services</p>
+                <h2 class="display-4 mb-5 ">WHAT WE CAN DO</h2>
 
-                <div class="container-fluid">
-                    <div class="swiper project-swiper mb-4">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project33.png" title="Rénovation de salle de bain" class="image-link">
-                                        <img class="portfolio-img " src="images/project33.png" alt="Rénovation de salle de bain">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Rénovation résidentielle</p>
-                                            <h3 class="text-white">Rénovations de salle de bain</h3>
-                                        </div>
+                <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link me-4 px-4 py-1 mb-2 active" id="regular-tab" data-bs-toggle="tab"
+                            data-bs-target="#regular-tab-pane" type="button" role="tab" aria-controls="regular-tab-pane"
+                            aria-selected="true">Interior</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link me-4 px-4 py-1 mb-2" id="medium-tab" data-bs-toggle="tab"
+                            data-bs-target="#medium-tab-pane" type="button" role="tab" aria-controls="medium-tab-pane"
+                            aria-selected="false">Exterior</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link me-4 px-4 py-1 mb-2" id="van-tab" data-bs-toggle="tab"
+                            data-bs-target="#van-tab-pane" type="button" role="tab" aria-controls="van-tab-pane"
+                            aria-selected="false">Services</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="regular-tab-pane" role="tabpanel"
+                        aria-labelledby="regular-tab" tabindex="0">
+                        <div class="row py-4">
+                            <div class="col-lg-3 pb-4">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Interior</p>
+                                    <h2 class="display-5 mb-5">Kitchen</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="services/kitchen.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project2.png" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/project2.png" alt="">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Rénovation résidentielle</p>
-                                            <h3 class="text-white">Rénovation de cuisine</h3>
-                                        </div>
+
+                            <div class="col-lg-3 pb-4">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Interior</p>
+                                    <h2 class="display-5 mb-5">Bathroom</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/projectterrasse1.png" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/projectterrasse1.png" alt="Construction de terrasses sur la rive sud de montréal">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Paysagement</p>
-                                            <h3 class="text-white">Construction de terrasses sur mesure</h3>
-                                        </div>
+
+                            <div class="col-lg-3 pb-4">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Interior</p>
+                                    <h2 class="display-5 mb-5">Flooring</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project4.png" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/project4.png" alt="">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Rénovation résidentielle</p>
-                                            <h3 class="text-white">Plancher</h3>
-                                        </div>
+
+                            <div class="col-lg-3 pb-4">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Interior</p>
+                                    <h2 class="display-5 mb-5">Painting</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> It ir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> lit mir iamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project5.png" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/project5.png" alt="">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Pavé-Unis</p>
-                                            <h3 class="text-white">Pavé-Unis</h3>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="medium-tab-pane" role="tabpanel" aria-labelledby="medium-tab"
+                        tabindex="0">
+                        <div class="row py-4">
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="0">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Exterior</p>
+                                    <h2 class="display-5 mb-5">Landscaping</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project1.png" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/project1.png" alt="">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Cabanon</p>
-                                            <h3 class="text-white">Construction de cabanon</h3>
-                                        </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="300">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Exterior</p>
+                                    <h2 class="display-5 mb-5">Deck</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project6.png" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/project6.png" alt="">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Rénovation résidentielle</p>
-                                            <h3 class="text-white">Gypse & Peinture</h3>
-                                        </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="600">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Exterior</p>
+                                    <h2 class="display-5 mb-5">Shed/Fences</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <a href="images/project2.jpg" title="Car Wash" class="image-link">
-                                        <img class="portfolio-img img-fluid" src="images/project22.png" alt="">
-                                        <div
-                                            class="description position-absolute top-50 start-50 translate-middle text-center p-3">
-                                            <p class="text-white">Projet 1</p>
-                                            <h3 class="text-white">Gypse & Peinture</h3>
-                                        </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="900">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Exterior</p>
+                                    <h2 class="display-5 mb-5">Sign</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> It ir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> lit mir iamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="van-tab-pane" role="tabpanel" aria-labelledby="van-tab" tabindex="0">
+                        <div class="row py-4">
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="0">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">Plumbing</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="300">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">Electrician</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="600">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">Brick</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="900">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">Restoration</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> It ir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> lit mir iamus</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="truck-tab-pane" role="tabpanel" aria-labelledby="truck-tab"
+                        tabindex="0">
+                        <div class="row py-4">
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="0">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Basic</p>
+                                    <h2 class="display-5 mb-5">$30.95</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="300">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">$40.50</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="600">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">$68.40</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="900">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Services</p>
+                                    <h2 class="display-5 mb-5">$101.50</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> It ir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> lit mir iamus</p>
+                                    </div>
+
+                                    <a href="booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="cargo-tab-pane" role="tabpanel" aria-labelledby="cargo-tab"
+                        tabindex="0">
+                        <div class="row py-4">
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="0">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Basic</p>
+                                    <h2 class="display-5 mb-5">$50.95</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="300">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Complet</p>
+                                    <h2 class="display-5 mb-5">$78.50</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="600">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">Deluxe</p>
+                                    <h2 class="display-5 mb-5">$97.40</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pb-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                                data-aos-delay="900">
+                                <div class="py-5 plan-post text-center">
+
+                                    <p class="header-top">ultra Deluxe</p>
+                                    <h2 class="display-5 mb-5">$150.50</h2>
+                                    <div class="price-option">
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
+                                        <p><span class="price-tick">✓</span> Vivamus velit mir</p>
+                                        <p><span class="price-tick">✓</span> It ir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                                        <p><span class="price-tick">✓</span> Quisque rhoncus</p>
+                                        <p><span class="price-tick">✓</span> lit mir iamus</p>
+                                    </div>
+
+                                    <a href="../booking.html" class="btn btn-primary mt-3 px-4 py-3 mx-2 ">Reserve Now
+                                        <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center pb-5 mb-5">
-                    <a href="services/services.html" class="btn btn-primary mt-5 ">Tous nos services<iconify-icon
-                            icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
-                    </a>
-                </div>
+
             </div>
         </div>
-
     </section>
 
     <section id="projets" class="my-5">
